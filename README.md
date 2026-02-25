@@ -9,6 +9,8 @@ Project Video: https://www.youtube.com/watch?v=Mi_lsEyYJMg
 
 HuggingFace Space: https://huggingface.co/spaces/yeyfreya/voicevibe-techin510
 
+Teamwork Repo: https://github.com/yeyfreya/T510_FinalProject
+
 ## Technologies used
 
 ### 1. TensorFlow and Keras for Model Building and Prediction 
@@ -58,3 +60,22 @@ Open the terminal and run the following commands:
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## Reflections
+### 1. What you learned
+We discovered that Streamlit can be used to create web applications that visualize data in real-time. This involves setting up our app to fetch and display data that updates dynamically, offering us insights into changing datasets as they evolve.
+
+We learned how to integrate machine learning models into Streamlit applications, enabling interactive and practical demonstrations of the models' capabilities. This includes loading pre-trained models and using them to make predictions based on user input.
+
+Beyond static predictions, we explored the concept of visualizing machine learning model predictions in real-time within a Streamlit app. This approach enhances user engagement by providing instant feedback based on the model's analysis of live data inputs.
+
+We inquired about implementing real-time voice input capabilities within Streamlit apps. While Streamlit does not natively support real-time audio capture and processing, we learned about potential workarounds involving custom JavaScript for audio capture and processing the audio data on the server side.
+
+A specific solution for capturing audio within Streamlit apps was introduced through the streamlit_audio_recorder component by Stefan Rummer. This component enables audio recording directly in the app, facilitating use cases like emotion detection from speech.
+
+We learned the process for exporting machine learning models trained in Google Colab to be used in external applications, such as Streamlit apps. This includes saving the model, downloading it from Colab, and loading it into the Streamlit app for inference.
+
+### 2. What questions/problems did you face?
+When we deploy our ML model in streamlit, we find the accuracy is very off while our ML model itself has a decent accuracy. The model we trained in colab notebook has a 0.75 accuracy but when transitioning to streamlit, the prediction is very inaccurate. The model we exported from Teachable Machine is slightly better when transitioning into streamlit web app.
+
+When training the model, we tried to use CNN + LSTM as our model and used large datasets and we ran into insufficient RAM issue in Colab Notebook.
