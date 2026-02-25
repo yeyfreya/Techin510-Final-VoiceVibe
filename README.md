@@ -2,7 +2,13 @@
 ## <span style="color:Green;"> A Real-time Speech Emotion Recognition App with Customized ML Model</span>
  
 #### Team member: Freya Yu, Gwen Zhang
- 
+
+## Links
+
+Project Video: https://www.youtube.com/watch?v=Mi_lsEyYJMg
+
+HuggingFace Space: https://huggingface.co/spaces/yeyfreya/voicevibe-techin510
+
 ## Technologies used
 
 ### 1. TensorFlow and Keras for Model Building and Prediction 
@@ -52,11 +58,3 @@ Open the terminal and run the following commands:
 pip install -r requirements.txt
 streamlit run app.py
 ```
- 
-## Reflections
-#### 1. What you learned
-
-
- 
-#### 2. What questions/problems did you face?
-has context menu
